@@ -1,0 +1,12 @@
+include ../../components/icon/icon
+
+mixin addition(data)
+    +b.addition
+        +e.title= data.title
+        +e.list
+            each item in data.items
+                +e.list-item
+                    input(type="checkbox" id= item.checkboxID name="")
+                    label(for= item.forId class="checkbox")
+                        span.checkbox__icon
+                        span.checkbox__cnt.checkbox__cnt--left.checkbox__cnt--text= item.text

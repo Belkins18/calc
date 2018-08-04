@@ -1,0 +1,11 @@
+extends ../layouts/default
+include ../components/calculator/calculator
+
+block vars
+    -pageSettings.title = 'Калькулятор расчета';
+
+block content
+    // Контент здесьs
+    +b.SECTION#bacground()&attributes(attributes)
+        +e.container.container
+            +calculator

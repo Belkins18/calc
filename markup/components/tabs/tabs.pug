@@ -1,0 +1,11 @@
+mixin tabs(data)
+    +b.tabs
+        +e.group
+            each item in data.items
+                +e.item(class= item.status)
+                    +e.title= item.title
+        +e.cnt
+            each item in data.item
+                +e.cnt-item(id= item.itemId || '')
+                    +e.parametr= item.param
+                    +e('input').counter(type= item.type id= item.id)

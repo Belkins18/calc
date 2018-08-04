@@ -1,0 +1,13 @@
+// @import 'components/_template/_template.scss';
+@import 'components/header/header';
+@import 'components/footer/footer';
+
+// components
+//@import 'components/-----------/-----------';
+@import 'components/addition/addition';
+@import 'components/total/total';
+@import 'components/tabs/tabs';
+
+// sections
+@import 'components/calculator/calculator';
+

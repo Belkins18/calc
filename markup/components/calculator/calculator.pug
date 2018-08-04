@@ -1,0 +1,9 @@
+include ../../components/addition/addition
+include ../../components/total/total
+include ../../components/tabs/tabs
+include ../../components/icon/icon
+mixin calculator(data)
+    +b.calculator
+        +tabs(tabs)
+        +addition(addition)
+        +total(total)

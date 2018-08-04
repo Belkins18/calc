@@ -1,0 +1,94 @@
+.tabs{
+    &__group{
+        display: flex;
+        justify-content: center;
+    }
+    &__item{
+        width: rem(200);
+        color: $white;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.77) 0%, #323131 100%);
+
+        font-size: rem(18);
+        font-weight: 700;
+        line-height: rem(70);
+        letter-spacing: rem(-0.18);
+        text-align: center;
+        &:first-child{
+            border-radius: rem(15) 0 0 0;
+        }
+        &:last-child{
+            border-radius: 0 rem(15) 0 0;
+        }
+        &.active{
+            position: relative;
+            color: $black;
+            background: #efae02;
+            &:before{
+                position: absolute;
+                content: '';
+                left: 0;
+                right: 0;
+                bottom: -6px;
+                height: 1px;
+                background: $yellow;
+            }
+        }
+    }
+    &__cnt{
+        display: flex;
+        flex-direction: column;
+    }
+    &__cnt-item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title{}
+    &__parametr{
+        position: relative;
+        color: $white;
+        font-size: rem(30);
+        font-weight: 700;
+        line-height: rem(72);
+        letter-spacing: rem(-0.3);
+        &:before{
+            position: absolute;
+            content: '';
+            left: 0;
+            right: 0;
+            bottom: rem(6);
+            height: 1px;
+            background: $yellow;
+        }
+    }
+    &__counter{
+        outline: none;
+        color: $yellow;
+        width: rem(132);
+        height: rem(60);
+        border: 3px solid lighten($yellow, 0.6);
+
+        font-size: rem(48);
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: rem(-0.48);
+
+        background-color: transparent;
+        text-align: center;
+    }
+}
+
+#pages{
+    display: none;
+}
+
+// indent
+.tabs{
+    &__item + *{
+        margin-left: rem(6);
+    }
+    * + &__cnt{
+        margin-top: rem(35);
+    }
+}

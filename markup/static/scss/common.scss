@@ -1,0 +1,57 @@
+// Common styles of the project
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+body {
+    font-size: 16px;
+    font-family: $OpenSans;
+    font-weight: 400;
+    font-style: normal;
+    //background: rgba(0, 0, 0, .3);
+
+    .ios & {
+        overflow: hidden;
+    }
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+textarea {
+    -webkit-appearance: none;
+
+    .ios & {
+        font-size: 16px;
+    }
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1140px;
+    padding-left: rem(10);
+    padding-right: rem(10);
+    margin: 0 auto;
+}
+
+section{
+    height: 100vh;
+}
+
+
+#bacground{
+    padding: rem(125) 0 rem(305);
+    background: url("%=static=%content/bacground.jpg") center center no-repeat;
+    background-size: cover;
+}
+
