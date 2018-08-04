@@ -2,13 +2,13 @@ var data = {addition: {
     title: 'Дополнительно',
     items: [
         {
-            checkboxID: 'checbox1',
-            forId: 'checbox1',
+            checkboxID: 'checkbox1',
+            forId: 'checkbox1',
             text: 'Возможность редактировать текст на сайте'
         },
         {
-            checkboxID: 'checbox2',
-            forId: 'checbox2',
+            checkboxID: 'checkbox2',
+            forId: 'checkbox2',
             text: 'Установка на CMS'
         }
     ]

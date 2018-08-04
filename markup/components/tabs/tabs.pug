@@ -2,7 +2,7 @@ mixin tabs(data)
     +b.tabs
         +e.group
             each item in data.items
-                +e.item(class= item.status)
+                +e.item(class= item.status data-group= item.group)
                     +e.title= item.title
         +e.cnt
             each item in data.item

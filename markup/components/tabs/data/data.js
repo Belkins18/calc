@@ -1,11 +1,14 @@
 var data = {tabs: {
     items: [
         {
-            status: 'active',
-            title: 'Лэндинг'
+
+            title: 'Лэндинг',
+            group: 'land'
         },
         {
-            title: 'Многостраничник'
+            status: 'active',
+            title: 'Многостраничник',
+            group: 'pages'
         }
     ],
     item: [

@@ -1,19 +1,10 @@
 'use strict';
 import polyfills from './libraries/polyfills';
-// import Skill from '../../components/c-skill/skill';
-// import works from '../../components/c-works/works';
+
+import calculator from '../../components/calculator/calculator';
 
 $(() => {
-
     polyfills.init();
-    // Skill.init();
-    // works.init();
     // ================ Здесь инициализируем модули =====================
+    calculator.init();
 });
-
-// new Vue({
-//     el: '#app',
-//     data: {
-//         show: false
-//     }
-// });
